@@ -7,44 +7,32 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
+import Stack from "@mui/material/Stack";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 import logo from "../assets/svg/logo-small.svg";
 import facebook from "../assets/icons/facebook.png";
 import twitter from "../assets/icons/twitter.png";
 import instagram from "../assets/icons/instagram.png";
-import { Stack } from "@mui/material";
 
 const pages = ["Shop", "Plan my kitchen", "About us", "Gallery", "My Orders"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
   };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
   return (
     <AppBar position="static" elevation={0} sx={{ p: 2 }}>
-      <Container maxWidth="lg" sx={{ borderBottom: "#707070 1px solid" }}>
+      <Container maxWidth="lg" sx={{ borderBottom: "#cccc 1px solid" }}>
         <Toolbar disableGutters>
           <Box
             sx={{

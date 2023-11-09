@@ -6,26 +6,34 @@ export const theme = createTheme({
     h3: {
       fontFamily: "Arial, Helvetica, sans-serif",
       fontWeight: 600,
-      fontSize: "3vw",
-      letterSpacing: "-1px",
-      color: "#ffffff",
-      textShadow: "0px 0px 25px #00000080",
+      fontSize: "52px",
       textTransform: "initial",
     },
-    h2: {
-      fontFamily: "Helvetica",
-      fontSize: "42px",
+    h4: {
+      fontFamily: "Arial, Helvetica, sans-serif",
       fontWeight: 500,
+      fontSize: "42px",
+      textTransform: "initial",
     },
-    body1: {
-      margin: 0,
-      fontFamily: "Roboto-Regular",
-      textAlign: "center",
+    h5: {
+      fontFamily: "Arial, Helvetica, sans-serif",
+      fontWeight: 500,
+      fontSize: "22px",
+      textTransform: "initial",
     },
     body2: {
-      fontFamily: "Helvetica",
+      fontFamily: "Roboto-Regular, Helvetica, sans-serif",
       fontSize: "14px",
+      lineHeight: "28px",
+      letterSpacing: "0.25px",
       fontWeight: 400,
+      color: "#777777",
+    },
+    caption: {
+      fontFamily: "Roboto-Regular, Helvetica, sans-serif",
+      fontSize: "14px",
+      lineHeight: "28px",
+      letterSpacing: "0.25px",
       color: "#777777",
     },
     button: {
@@ -35,8 +43,7 @@ export const theme = createTheme({
     },
     subtitle1: {
       margin: 0,
-      fontFamily: "Roboto-Regular",
-      textAlign: "center",
+      fontFamily: "Roboto-Regular, Helvetica, sans-serif",
       letterSpacing: "3px",
       fontSize: ".6vw",
       paddingBottom: "5px",
