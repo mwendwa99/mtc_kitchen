@@ -1,6 +1,6 @@
 # MTC Home Kitchen
 
-This trial website for MTC that was built with:
+This is a trial website for MTC that was built with:
 * Vite: A fast and efficient build tool for modern web development.
 * React: A declarative, efficient, and flexible JavaScript library for building user interfaces.
 
@@ -16,7 +16,7 @@ Checkout the live website here [MTC Home Kitchen](https://mtc-home-kitchen.netli
 
 # How To Use
 
-To clone and run this template, ensure you have [Git](https://git-scm.com) and [npm](https://nodejs.org/en/) installed on your machine. Follow these commands in your terminal:
+To clone and run this web application, ensure you have [Git](https://git-scm.com) and [npm](https://nodejs.org/en/) installed on your machine. Follow these commands in your terminal:
 ```bash
 # Clone this repository
 $ git clone https://github.com/mwendwa99/mtc_kitchen.git
