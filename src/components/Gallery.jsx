@@ -40,18 +40,35 @@ const Gallery = () => {
   return (
     <Box sx={{ p: 10 }}>
       <Container maxWidth="md">
-        <Grid container spacing={2}>
+        <Grid container spacing={1}>
           <Grid
             item
             md={12}
-            sx={{ display: "flex", justifyContent: "center", width: "100%" }}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              width: "100%",
+            }}
           >
             <Typography align="center" gutterBottom variant="h5">
               Customer Gallery
             </Typography>
           </Grid>
           {visibleImageSlice.map((image, index) => (
-            <Grid item xs={12} md={3} key={index}>
+            <Grid
+              sx={{
+                p: 0,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+              item
+              xs={12}
+              sm={6}
+              md={3}
+              key={index}
+            >
               <img
                 style={imageStyle}
                 src={image}
