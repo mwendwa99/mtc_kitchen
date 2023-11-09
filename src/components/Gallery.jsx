@@ -41,7 +41,11 @@ const Gallery = () => {
     <Box sx={{ p: 10 }}>
       <Container maxWidth="md">
         <Grid container spacing={2}>
-          <Grid item md={12}>
+          <Grid
+            item
+            md={12}
+            sx={{ display: "flex", justifyContent: "center", width: "100%" }}
+          >
             <Typography align="center" gutterBottom variant="h5">
               Customer Gallery
             </Typography>

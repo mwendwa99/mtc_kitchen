@@ -39,16 +39,13 @@ export default function SecondSection() {
             sx={{
               display: "flex",
               flexDirection: "column",
-              justifyContent: "space-evenly",
+              justifyContent: { md: "space-evenly" },
+              alignItems: { xs: "center", md: "flex-start" },
               height: "100%",
               p: 4,
             }}
           >
-            <Typography
-              variant="subtitle1"
-              align="left"
-              sx={{ color: "#D4B254" }}
-            >
+            <Typography variant="subtitle1" sx={{ color: "#D4B254" }}>
               Quality Craftmanship from build to delivery
             </Typography>
             <Typography gutterBottom variant="h4">

@@ -12,6 +12,20 @@ const BannerCarousel = (props) => {
     setActiveIndex(newIndex);
   };
 
+  const next = () => {
+    if (animating) return;
+    const nextIndex =
+      activeIndex === props.slides.length - 1 ? 0 : activeIndex + 1;
+    setActiveIndex(nextIndex);
+  };
+
+  const previous = () => {
+    if (animating) return;
+    const nextIndex =
+      activeIndex === 0 ? props.slides.length - 1 : activeIndex - 1;
+    setActiveIndex(nextIndex);
+  };
+
   const slides = props.slides.map((slide, i) => {
     return (
       <CarouselItem tag="div" key={slide.id}>
@@ -54,7 +68,6 @@ const BannerCarousel = (props) => {
               sx={{
                 mb: 2,
                 color: "#ffffff",
-                textShadow: "0px 0px 25px #00000080",
               }}
               variant="h3"
             >
@@ -71,7 +84,7 @@ const BannerCarousel = (props) => {
 
   return (
     <Box>
-      <Carousel activeIndex={activeIndex}>
+      <Carousel activeIndex={activeIndex} next={next} previous={previous}>
         <CarouselIndicators
           items={slides}
           activeIndex={activeIndex}

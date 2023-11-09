@@ -1,5 +1,14 @@
-import { Box, Container, Grid, Link, Stack, Typography } from "@mui/material";
+import {
+  Box,
+  Container,
+  Grid,
+  Link,
+  Stack,
+  Typography,
+  Divider,
+} from "@mui/material";
 
+import logo from "../assets/svg/logo-small.svg";
 import footerBackground from "../assets/images/footer.png";
 import facebook from "../assets/icons/facebook.png";
 import twitter from "../assets/icons/twitter.png";
@@ -18,6 +27,27 @@ const Footer = () => {
     >
       <Container maxWidth="md">
         <Grid container spacing={3}>
+          <Grid item xs={12}>
+            <Divider
+              sx={{
+                width: "100%",
+                ":before": {
+                  backgroundColor: "#ccc",
+                  content: '""',
+                  display: "block",
+                  height: "1px",
+                },
+                ":after": {
+                  backgroundColor: "#ccc",
+                  content: '""',
+                  display: "block",
+                  height: "1px",
+                },
+              }}
+            >
+              <img src={logo} alt="logo" />
+            </Divider>
+          </Grid>
           <Grid item xs={12} md={3}>
             <Typography variant="h6" sx={{ marginBottom: 2 }}>
               About

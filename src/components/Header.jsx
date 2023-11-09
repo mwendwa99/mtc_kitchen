@@ -30,34 +30,34 @@ function Header() {
     setAnchorElNav(null);
   };
 
+  const imageStyle = {
+    height: "30px",
+    width: "30px",
+    cursor: "pointer",
+  };
+
   return (
     <AppBar position="static" elevation={0} sx={{ p: 2 }}>
       <Container maxWidth="lg" sx={{ borderBottom: "#cccc 1px solid" }}>
-        <Toolbar disableGutters>
+        <Toolbar
+          disableGutters
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-around",
+          }}
+        >
           <Box
             sx={{
-              flexGrow: 1,
               display: { xs: "none", md: "flex" },
               alignItems: "center",
-              justifyContent: "space-evenly",
+              justifyContent: "space-around",
             }}
           >
             <Stack direction="row" spacing={2}>
-              <img
-                style={{ width: "30px", height: "30px" }}
-                src={facebook}
-                alt="facebook"
-              />
-              <img
-                style={{ width: "30px", height: "30px" }}
-                src={twitter}
-                alt="twitter"
-              />
-              <img
-                style={{ width: "30px", height: "30px" }}
-                src={instagram}
-                alt="instagram"
-              />
+              <img style={imageStyle} src={facebook} alt="facebook" />
+              <img style={imageStyle} src={twitter} alt="twitter" />
+              <img style={imageStyle} src={instagram} alt="instagram" />
             </Stack>
             {pages.slice(0, 2).map((page) => (
               <Button
@@ -69,7 +69,7 @@ function Header() {
               </Button>
             ))}
           </Box>
-          <Box sx={{ flexGrow: 1 }}>
+          <Box sx={{}}>
             <img src={logo} alt="logo" />
           </Box>
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
@@ -111,7 +111,7 @@ function Header() {
             </Menu>
           </Box>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ display: { xs: "none", md: "flex" } }}>
             {pages.slice(2, 4).map((page) => (
               <Button
                 key={page}
@@ -124,7 +124,7 @@ function Header() {
           </Box>
           <Button
             onClick={handleCloseNavMenu}
-            sx={{ display: "flex", fontSize: ".6rem" }}
+            sx={{ display: { xs: "none", md: "flex" }, fontSize: ".6rem" }}
             variant="outlined"
             endIcon={<ShoppingCartIcon />}
           >

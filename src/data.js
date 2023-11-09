@@ -12,13 +12,13 @@ export const bannerCarouselData = [
   {
     id: 2,
     image: background2,
-    title: "lorem ipsum dolor sit amet consectetur",
+    title: "Bespoke & made to measure handmade kitchen design",
     subtitle: "Design and order your new kitchen online today",
   },
   {
     id: 3,
     image: background3,
-    title: "lorem ipsum dolor sit amet consectetur",
+    title: "Bespoke & made to measure handmade kitchen design",
     subtitle: "Design and order your new kitchen online today",
   },
 ];
